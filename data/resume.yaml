@@ -1,0 +1,138 @@
+interests: "Travel, OneBag, Walking, MBTI, Coffee Brewing, Videography, PC Gaming, and Software Development"
+
+sections:
+  - title: Experience
+    items:
+      - role: "Senior Software Engineer:"
+        line: "[Fannie Mae](https://www.fanniemae.com/) (Remote), 2020 - Present"
+        bullets:
+          - "Developed architecture enabling the creation of understandable, reproducible, and auditable data pipelines using Lambda, Spark, Kubernetes, Terraform, and Airflow."
+          - "Wrote robust Scala Spark packages to ingest, geocode, and classify large datasets from several vendors with differing formats/schemas at scale."
+          - "Built TypeScript React frontend and GraphQL API layer to unify execution, monitoring, and comparison of disjoint transforms/pipelines into a single user-friendly experience."
+          - "Led planning and implementation of full stack data aggregation/calculation platform with performant Golang/Node.js services."
+      - role: "Senior Software Engineer:"
+        line: "[Originate](https://originate.com) (Remote), 2019 - 2020"
+        bullets:
+          - "Consulted market-leading company to establish compliant, scalable, language agnostic services architecture as a baseline for soft transition from ingrained legacy systems."
+          - "Led team on the development of large automated article discovery, extraction, analysis system that continuously monitored and processed articles from several thousand news sources across a horizontally-scaled worker-queue architecture with Node.js."
+          - "Created Solidity smart contract based decentralized DNS with capabilities for seamless future upgrades by adhering to eternal storage patterns using the Truffle Suite."
+      - role: "Software Engineer:"
+        line: "[Originate](https://originate.com) (San Francisco, CA / Remote), 2015 - 2019"
+        bullets:
+          - "Increased sales in top niche e-commerce website through application of performant, flexible, predictive search to legacy data stores."
+          - "Migrated from soon-to-be deprecated serverless SAAS architecture to in-house developed and hosted solutions."
+          - "Owned implementation of company website redesign overhaul."
+      - role: "Software Engineer Intern:"
+        line: "[Originate](https://originate.com) (Los Angeles, CA), 2014 - 2015"
+        expand: true
+        bullets:
+          - "Worked with multidisciplinary team in sprints and on code reviews"
+          - "Practiced TDD in development of Node.js MVC patterned web app"
+          - "Developed an automated fantasy sports betting bot with analytics"
+      - role: "System Admin:"
+        line: "[Pleasant Paper Recycling](https://concordrecyclingcenter.com/) (Concord, CA), 2013 - present"
+        expand: true
+        bullets:
+          - "Setup multilocation network of POS/IOT devices via IPSec VPN"
+          - "Interacted with MS SQL, RDP, Schedulers on MS Server 2008 R2"
+          - "Maintained software and hardware for their working life cycles"
+      - role: "Freelancer:"
+        line: "[Dan Helix](https://www.linkedin.com/in/dan-helix-4787a240) for Mayor (Concord, CA), 2012"
+        expand: true
+        bullets:
+          - "Developed front-end for political campaign website"
+          - "Setup MX server and DNS entries for incoming and outgoing emails"
+
+  - title: Education
+    items:
+      - role: "Bachelor of Science:"
+        line: "[University of California Los Angeles](http://ucla.edu), 2011 - 2015"
+        bullets:
+          - "Computer Science"
+          - "Developed virtual reality game in UE4 that was [presented at SIGGRAPH](http://dailybruin.com/2015/11/18/ucla-computer-science-class-integrates-virtual-world-into-reality/)"
+      - role: "High School Diploma:"
+        line: "[College Park High School](http://cphs.mdusd.org/), 2007 - 2011"
+        expand: true
+        bullets:
+          - "High Honors, Math Certificate, Science Certificate"
+
+  - title: Projects
+    items:
+      - role: "Remote Year Participant:"
+        line: "[Work Travel Program](https://remoteyear.com), 2017 - 2018"
+        bullets:
+          - "Traveled around the world for a year while continuing to work remotely"
+          - "Documented daily experiences by recording a [single second everyday](https://www.youtube.com/watch?v=IPqs05q1Vl4)"
+          - "Captured [one polaroid a day](projects/polaroids/) and compiled album of places visited"
+      - role: "AdTwixt:"
+        line: "[URL Shortener with Interstitial Captcha Ads](https://flippa.com/2919099-custom-coded-unique-captcha-url-shortener-3m-hits-5k-month-potential), 2013"
+        expand: true
+        bullets:
+          - "Developed efficient scripts that served traffic in the millions per month"
+          - "Established small network of publishers and advertisers"
+      - role: "Miuzer:"
+        line: "[Community Generated Music Library](https://flippa.com/2653957-miuzer-com), 2011"
+        expand: true
+        bullets:
+          - "Developed web 2.0 music player based with code from [TheCloudPlayer](https://github.com/hinke/the-cloud-player)"
+          - "Replaced Rails backend with stripped down PHP version"
+      - role: "FileFx:"
+        line: "[File Sharing with CPA Integration](https://flippa.com/116859-unique-custom-file-sharing-site-with-5k-month-potential-cpa), 2010"
+        expand: true
+        bullets:
+          - "Created distributed/scalable system for serving user uploaded files"
+          - "Became publisher on majority of industry leading CPA advertising networks"
+          - "Grew group of participants in revenue sharing program"
+      - role: "PHPMyMirror:"
+        line: "[File Mirroring Script](https://flippa.com/130117-phpmymirror-com), 2009"
+        expand: true
+        bullets:
+          - "Designed file mirroring addon for popular file sharing script"
+          - "Distributed over 50 licenses across several releases"
+      - role: "Craze.cc:"
+        line: "Social Topic Discussion, 2008"
+        expand: true
+        bullets:
+          - "Developed Reddit-like topic discussion website with Pligg"
+          - "Received over 14,000 organic visits per month"
+          - "[Sold for $895](https://flippa.com/85455-craze-cc) and continued development as freelancer"
+      - role: "Uber-Upload:"
+        line: "File Mirroring Website, 2007"
+        expand: true
+        bullets:
+          - "Developed file sharing website that mirrored files to other file sharing sites"
+          - "[Sold for $139](https://flippa.com/74728-uber-upload-com)"
+
+  - title: Skills
+    # Same order PHP sort() produced (case-sensitive). Hugo's sort is case-insensitive.
+    skills:
+      - AWS
+      - Airflow
+      - Algolia
+      - Angular
+      - Bash
+      - Data Scraping
+      - DevOps
+      - Docker
+      - Firebase
+      - Golang
+      - GraphQL
+      - Java
+      - Javascript
+      - Kubernetes
+      - Microservices
+      - MongoDB
+      - NLP
+      - Node.js
+      - Objective-C
+      - PostgreSQL
+      - Python
+      - React
+      - Redis
+      - SQL
+      - Scala
+      - Serverless
+      - Solidity
+      - Spark
+      - Terraform
+      - TypeScript

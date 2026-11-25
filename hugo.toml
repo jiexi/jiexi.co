@@ -1,0 +1,24 @@
+baseURL = "https://jiexi.co/"
+locale = "en-us"
+title = "Jiexi Luan"
+enableRobotsTXT = true
+disableHugoGeneratorInject = true
+disableKinds = ["taxonomy", "term", "RSS"]
+
+# Existing asset folders stay where they are and are published at the site root.
+[module]
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "css"
+    target = "static/css"
+  [[module.mounts]]
+    source = "js"
+    target = "static/js"
+  [[module.mounts]]
+    source = "images"
+    target = "static/images"
+  [[module.mounts]]
+    source = "projects"
+    target = "static/projects"

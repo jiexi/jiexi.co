@@ -1,0 +1,4 @@
+{{- $html := . | markdownify -}}
+{{- $html = replaceRE `(?s)^\s*<p>` "" $html -}}
+{{- $html = replaceRE `(?s)</p>\s*$` "" $html -}}
+{{- $html | safeHTML -}}

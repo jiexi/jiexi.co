@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{{ .Site.Title }}</title>
+<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+<link rel="stylesheet" href="{{ "css/style.css" | relURL }}" type="text/css" media="screen" />
+<link rel="stylesheet" href="{{ "css/print.css" | relURL }}" type="text/css" media="print" />
+</head>
+<body moznomarginboxes mozdisallowselectionprint>
+
+<div class="header no-print">
+	<a class="bacon" href="#">Lorem Bacon</a> |
+	<a href="javascript:window.print();">Download/Print</a> |
+	<a class="show-more" href="#">Show More</a>
+</div>
+
+<div class="page-wrapper">
+	<h1>Jiexi Luan</h1>
+	<h2>Software Engineer</h2>
+	<p>
+	  <a href="https://jiexi.co">https://jiexi.co</a> -
+	  <a href="mailto:hello@jiexi.co">hello@jiexi.co</a> -
+		<a href="tel:+19252078397">(925) 207 8397</a>
+	  <span class="no-print"> |
+		  <a href="https://www.linkedin.com/in/jiexiluan/">LinkedIn</a> -
+		  <a href="https://github.com/jiexi">Github</a> -
+		  <a href="https://www.hackernoon.com/u/jiexi">HackerNoon</a>
+			<span class="expand-inline">
+				- <a href="https://www.instagram.com/jetxski/">Instagram</a>
+				- <a href="https://www.youtube.com/channel/UCFQQECR8k4dXOnEyLZQpdeg">Youtube</a>
+			</span>
+	  </span>
+	</p>
+	<p class="expand">Interests: {{ hugo.Data.resume.interests }}</p>
+
+	<table>
+		<tbody>
+		{{- range hugo.Data.resume.sections }}
+		<tr>
+			<td>
+				<h2>{{ .title }}</h2>
+				{{- if .skills }}
+				<div>
+					<span>{{ delimit .skills ", " }}</span>
+				</div>
+				{{- else }}
+				{{- range .items }}
+				<div{{ if .expand }} class="expand"{{ end }}>
+					<h3>{{ .role }}</h3>
+					<span>{{ partial "inline.html" .line }}</span>
+					<ul>
+						{{- range .bullets }}
+						<li>{{ partial "inline.html" . }}</li>
+						{{- end }}
+					</ul>
+				</div>
+				{{- end }}
+				{{- end }}
+			</td>
+		</tr>
+		{{- end }}
+		</tbody>
+	</table>
+</div>
+
+<noscript>
+  <style type="text/css">
+    .page-wrapper {
+    	opacity: 1;
+    }
+  </style>
+</noscript>
+<script src="{{ "js/lodash.min.js" | relURL }}"></script>
+<script src="{{ "js/jquery.js" | relURL }}"></script>
+<script src="{{ "js/init.js" | relURL }}"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-9929358-20', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

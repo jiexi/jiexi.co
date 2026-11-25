@@ -1,0 +1,108 @@
+@font-face {
+	font-family: "Century Gothic V1";
+  src: url("./fonts/Century Gothic V1.eot"); /* IE9*/
+  src: url("./fonts/Century Gothic V1.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("./fonts/Century Gothic V1.woff2") format("woff2"), /* chrome、firefox */
+  url("./fonts/Century Gothic V1.woff") format("woff"), /* chrome、firefox */
+  url("./fonts/Century Gothic V1.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("./fonts/Century Gothic V1.svg#Century Gothic V1") format("svg"); /* iOS 4.1- */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@page {
+    size: auto;   /* auto is the current printer page size */
+    margin: 0mm;  /* this affects the margin in the printer settings */
+}
+
+body {
+	font-family: "Century Gothic V1", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	line-height: 1.2em;
+  background-color: white;
+  margin: 0px;  /* the margin on the content before printing */
+	color: #444;
+}
+
+.page-wrapper {
+	opacity: 1;
+	background: white;
+	margin: 0px;
+	box-shadow: none;
+	margin: 0 auto;
+	padding: 60px 50px;
+}
+
+.no-print, .no-print *, .expand, .expand *, .expand-inline, .expand-inline * {
+  display: none !important;
+}
+
+/* Headers */
+h1, h2, h3 {
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+h1 {
+  font-size: 34px;
+  height: 34px;
+  color: #00B0F0;
+  letter-spacing: 2.25px;
+	margin-left: -2px;
+}
+
+h2 {
+  font-size: 20px;
+  height: 20px;
+  letter-spacing: 1.5px;
+  padding-bottom: 3px;
+}
+
+h3 {
+	display: inline;
+	font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+/* Blocks */
+p {
+	font-size: 12px;
+	padding: 0;
+}
+
+ul {
+	margin: 4px 0 8px 43px;
+}
+
+a {
+	color: black !important;
+	text-decoration: none;
+}
+
+
+/* Tables */
+table {
+	width: 100%;
+	border-top: 1px solid black;
+	margin-top: 10px;
+	padding-top: 5px;
+}
+
+td {
+	padding-bottom: 4px;
+}
+
+td li, td span {
+	font-size: 14px;
+}
+
+td p.spacer {
+	height: 8px;
+}
+
+td > div {
+	margin: 1px 0;
+}
